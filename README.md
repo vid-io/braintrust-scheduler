@@ -59,14 +59,15 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
 ## Deployment
 
 This project is deployed on Vercel at:
-[https://vercel.com/vidiq/v0-brain-trust-signup-form](https://vercel.com/vidiq/v0-brain-trust-signup-form)
+* Project Dashboard: [https://vercel.com/vidiq/v0-brain-trust-signup-form](https://vercel.com/vidiq/v0-brain-trust-signup-form)
+* Live URL: [https://v0-brain-trust-signup-form-9g80ge0js-vidiq.vercel.app](https://v0-brain-trust-signup-form-9g80ge0js-vidiq.vercel.app)
 
 To deploy your own version:
 
 1. Push your code to a Git repository
 2. Import your project to Vercel
 3. Set up your environment variables in the Vercel dashboard
-4. Deploy!
+4. Deploy using `vercel --prod`
 
 ## Development
 
