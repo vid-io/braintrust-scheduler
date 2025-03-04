@@ -9,7 +9,7 @@ export default async function Home() {
     <div className="container mx-auto py-10 px-4">
       <h1 className="text-3xl font-bold mb-6">vidIQ Brain Trust Meetings</h1>
       <p className="text-muted-foreground mb-8">
-        Inspired by Pixar's Brain Trust, these meetings provide a forum for sharing ideas and getting feedback from the
+        Inspired by Pixar&apos;s Brain Trust, these meetings provide a forum for sharing ideas and getting feedback from the
         team.
       </p>
 

@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { format, isBefore, startOfDay, isTuesday, setHours, setMinutes } from "date-fns"
+import { format, isBefore, startOfDay, isTuesday } from "date-fns"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
@@ -14,13 +14,8 @@ import { Slot } from "@/lib/types"
 
 // Helper function to get noon PST cutoff time
 function getNoonPSTCutoff() {
+  // Create a date representing today at noon PST (20:00 UTC)
   const now = new Date()
-  // Convert current time to PST (UTC-8)
-  const pstOffset = 8 * 60 // 8 hours in minutes
-  const localOffset = now.getTimezoneOffset()
-  const totalOffsetMinutes = localOffset - pstOffset
-
-  // Create cutoff at noon PST today
   const cutoff = startOfDay(now)
   cutoff.setUTCHours(20) // noon PST = 20:00 UTC
   return cutoff
